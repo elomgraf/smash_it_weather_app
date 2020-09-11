@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'raleway', sans-serif;
+    background-image: url('img/bg.jpg');
+    background-size: cover;
+    background-position: top center;
+    height: 100vh !important;
+    min-width: 350px;
+}
+
+.app-wrap {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6));
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 15px 15px;
+}
+
+input {
+    width: 100%;
+    max-width: 70%;
+    padding: 10px 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 3px solid #ed1c24;
+    color: #313131;
+    font-size: 28px !important;
+    font-weight: 300;
+    transition: 0.2s ease-out;
+    text-align: center;
+}
+
+input:focus {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+main {
+    flex: 1 1 100;
+    padding: 5px 25px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.location .city {
+    margin-top: 30px;
+    color: #ed1c24;
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.location .date {
+    color: #fff;
+    font-size: 24px;
+}
+
+.weather-icon {
+    margin: 0;
+}
+
+.current .temp {
+    color: #fff;
+    font-size: 90px;
+    font-weight: 500;
+    margin-top: 10px;
+    text-shadow: 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.current .temp span {
+    font-weight: 200;
+}
+
+.weather {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.current .hi-low {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
